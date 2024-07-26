@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <div className="container mx-auto my-20 px-4">
+    <div className="bg-[#E8FBF4] p-10">
       <h2 className="text-3xl font-bold text-center mb-10">Features</h2>
       <div className="space-y-20">
         <div className="flex flex-col lg:flex-row items-center">

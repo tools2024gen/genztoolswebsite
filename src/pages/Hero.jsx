@@ -1,4 +1,5 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
@@ -10,26 +11,27 @@ const Hero = () => {
   };
 
   return (
-    <div className="container mx-auto my-20 px-4">
-      <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+    <div className="py-20 bg-cover bg-center" style={{ backgroundImage: "url('/hero.png')" }}>
+      <div className="container mx-auto flex flex-col md:flex-row items-center">
+        <div className="md:w-1/3 text-center md:text-left mb-10 md:mb-0">
+          <h1 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-4">
             WA Sender Tool
           </h1>
-          <button
-            className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl mb-4"
-            onClick={handleWhatsAppClick}
-          >
-            Let's Connect on WhatsApp{" "}
-          </button>
-          <p className="text-gray-700 lg:w-[400px] text-lg">
-            Add additional features on top of WhatsApp Web to help you with
-            customer engagement and customer service.
+          <div className="flex justify-center md:justify-start mb-4">
+            <button
+              className="bg-gradient-to-r from-[#004F45] to-[#007249] text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex items-center"
+              onClick={handleWhatsAppClick}
+            >
+              Connect on WhatsApp <FaWhatsapp className="ml-2" />
+            </button>
+          </div>
+          <p className="text-[#606060] lg:w-[400px] text-[16px] mx-auto md:mx-0">
+            Add additional features on top of WhatsApp Web to help you with customer engagement and customer service.
           </p>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-2/3 w-full">
           <iframe
-            className="w-full h-64 md:h-96"
+            className="w-full h-64 md:h-full lg:w-[762px] px-3 lg:px-0 lg:h-[494px] mx-auto"
             src="https://www.youtube.com/embed/UnYh-yW9ZFY"
             title="YouTube video player"
             frameBorder="0"

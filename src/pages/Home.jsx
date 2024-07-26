@@ -19,7 +19,7 @@ const Home = () => {
       <Testimonials />
       <HowItWorks />
       <section>
-        <div className="container mx-auto my-20 px-4">
+        <div className="bg-[#E8FBF4] p-10">
           <h2 className="text-3xl font-bold text-center mb-10">Tutorials</h2>
           <div className="flex flex-col lg:flex-row items-center justify-center">
             <div className="lg:w-3/4 w-full">
@@ -36,9 +36,9 @@ const Home = () => {
           <div className="flex justify-center mt-6">
             <a
               href="/tutorials"
-              className="bg-gradient-to-r from-blue-500 to-green-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="bg-gradient-to-r from-[#004F45] to-[#007249] text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
-              Access or Watch Complete Playlist
+              Watch complete Playlist{" "}
             </a>
           </div>
         </div>

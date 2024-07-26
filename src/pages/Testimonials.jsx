@@ -88,7 +88,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-blue-50 py-20">
+    <div className="bg-[#E8FBF4]  py-20">
       <div className="container mx-auto px-4 text-center relative">
         <h2 className="text-3xl font-bold text-center mb-10">Customer says</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto max-w-6xl">

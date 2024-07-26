@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tiles = () => {
   return (
-    <div className="container mx-auto my-20 px-4">
+    <div className="bg-[#E8FBF4] p-10">
       <h2 className="text-3xl font-bold text-center mb-10">Check out our other pages</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">

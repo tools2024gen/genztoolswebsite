@@ -10,7 +10,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container mx-auto my-20 px-4 text-center">
+    <div className=" bg-[#E8FBF4] p-10 text-center">
       <h2 className="text-3xl font-bold mb-10">Contact Us on WhatsApp</h2>
       <div className="mt-10 flex justify-center">
         <button

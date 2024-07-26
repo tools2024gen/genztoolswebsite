@@ -10,7 +10,11 @@ const GetStarted = () => {
   };
 
   return (
-    <section className="bg-blue-500 text-white text-center py-20">
+    <section
+      className="text-white text-center py-20 bg-cover bg-center"
+      style={{ backgroundImage: "url('/getstarted.png')" }}
+    >
+      {" "}
       <h1 className="text-5xl font-bold">
         Boost Your Marketing with Our WhatsApp Bulk Messaging Tool
       </h1>
