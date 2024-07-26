@@ -7,6 +7,7 @@ import FAQ from "./FAQ";
 import Testimonials from "./Testimonials";
 import HowItWorks from "./HowItWorks";
 import GetStarted from "./GetStarted";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -34,12 +35,12 @@ const Home = () => {
             </div>
           </div>
           <div className="flex justify-center mt-6">
-            <a
+            <Link
               href="/tutorials"
               className="bg-gradient-to-r from-[#004F45] to-[#007249] text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               Watch complete Playlist{" "}
-            </a>
+            </Link>
           </div>
         </div>
       </section>
