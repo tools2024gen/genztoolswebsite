@@ -72,6 +72,66 @@ const testimonials = [
     author: "Emma R.",
     rating: "5 out of 5 star rating",
   },
+  {
+    text: "This tool is a lifesaver! The email scraping feature has allowed us to build targeted marketing lists effortlessly. Highly recommend!",
+    author: "Anna G.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "I've been using this tool for a few weeks now, and it's fantastic! The contact extraction is seamless and incredibly accurate.",
+    author: "Tom S.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "The ability to automate messages and scrape data from social media has transformed our outreach strategy. A must-have for any marketer.",
+    author: "Kumar L.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "Outstanding tool! The bulk messaging feature is incredibly efficient and saves us a ton of time. Worth every penny.",
+    author: "Ali M.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "This tool has made customer engagement so much easier. The text snippets feature is especially useful for repetitive tasks.",
+    author: "Nirmal K.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "Fantastic extension with excellent features. The WhatsApp data scraper works perfectly for building a comprehensive contact list.",
+    author: "Mary B.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "I love how easy it is to use this tool. It has streamlined our marketing efforts and significantly improved our campaign performance.",
+    author: "Sophia T.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "Exceptional tool for businesses looking to enhance their marketing strategies. The bulk messaging and data scraping features are top-notch.",
+    author: "Josh C.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "This extension is incredibly helpful. The ability to add and reuse text snippets has saved us so much time and effort.",
+    author: "Ava H.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "Highly effective tool with impressive features. The WhatsApp scraper and bulk messaging options are game-changers for our business.",
+    author: "Noah J.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "An essential tool for our marketing team. The data scraping and bulk messaging features have greatly improved our outreach efforts.",
+    author: "Nitin W.",
+    rating: "5 out of 5 star rating",
+  },
+  {
+    text: "Wonderful tool with a user-friendly interface. It has made managing our marketing campaigns much more efficient and effective.",
+    author: "Lucas P.",
+    rating: "5 out of 5 star rating",
+  },
 ];
 
 const Testimonials = () => {

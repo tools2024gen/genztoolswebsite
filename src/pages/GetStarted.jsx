@@ -16,11 +16,11 @@ const GetStarted = () => {
     >
       {" "}
       <h1 className="text-5xl font-bold">
-        Boost Your Marketing with Our WhatsApp Bulk Messaging Tool
+      Supercharge Your Marketing with Our WhatsApp Bulk Messaging Tool/Whatsapp automation tool
       </h1>
       <p className="text-xl mt-4">
-        Reach thousands of customers in just a few clicks. Easy to use and
-        highly efficient.
+      Effortlessly reach thousands of customers with just a few clicks. Simple, efficient, and highly effective.
+
       </p>
       <button
         onClick={handleWhatsAppClick}

@@ -4,10 +4,7 @@ const HowItWorks = () => {
   return (
     <div className="bg-[#E8FBF4] p-10">
       <h1 className="text-3xl font-bold text-center mb-6">How It Works?</h1>
-      <p className="text-center mb-10 text-[#666666]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-        libero et velit interdum, ac aliquet odio mattis.
-      </p>
+
       <div className="flex flex-col lg:flex-row items-center justify-center">
         <div className="flex flex-col items-start space-y-6 lg:w-1/2">
           <div className="flex items-center space-x-3">

@@ -11,7 +11,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="py-20 bg-cover bg-center" style={{ backgroundImage: "url('/hero.png')" }}>
+    <div
+      className="py-20 bg-cover bg-center"
+      style={{ backgroundImage: "url('/hero.png')" }}
+    >
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/3 text-center md:text-left mb-10 md:mb-0">
           <h1 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-4">
@@ -26,7 +29,8 @@ const Hero = () => {
             </button>
           </div>
           <p className="text-[#606060] lg:w-[400px] text-[16px] mx-auto md:mx-0">
-            Add additional features on top of WhatsApp Web to help you with customer engagement and customer service.
+            Enhance WhatsApp Web with powerful features to boost customer
+            engagement and elevate customer service.
           </p>
         </div>
         <div className="md:w-2/3 w-full">

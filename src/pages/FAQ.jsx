@@ -1,84 +1,101 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+
+const faqData = [
+  {
+    question: "What is WA Sender, and how does it work?",
+    answer: "WA Sender is a tool designed to enhance your WhatsApp marketing by enabling you to send bulk messages, automate interactions, and manage contacts efficiently. It integrates seamlessly with WhatsApp Web to streamline your messaging process and improve engagement."
+  },
+  {
+    question: "How do I install and set up WA Sender?",
+    answer: "To install WA Sender, download the extension from our website and follow the installation instructions provided. Once installed, you can connect it to your WhatsApp Web account and start using its features. Detailed setup guides and tutorials are available on our Help Center."
+  },
+  {
+    question: "Can I use WA Sender with multiple WhatsApp accounts?",
+    answer: "Yes, WA Sender supports multiple WhatsApp accounts. You can switch between accounts and manage them all from a single interface."
+  },
+  {
+    question: "How does the bulk messaging feature work?",
+    answer: "The bulk messaging feature allows you to send personalized messages to multiple contacts simultaneously. You can upload a contact list and customize your messages to ensure effective communication with your audience."
+  },
+  {
+    question: "Is my data secure with WA Sender?",
+    answer: "Yes, we prioritize your data security. WA Sender uses encryption and secure protocols to ensure that your data is protected and kept confidential. We adhere to strict privacy policies to safeguard your information."
+  },
+  {
+    question: "Can I schedule messages with WA Sender?",
+    answer: "Absolutely. WA Sender lets you plan and schedule your WhatsApp campaigns, so your messages are sent at the optimal times to reach your audience effectively."
+  },
+  {
+    question: "How do I extract emails and contact information from social media?",
+    answer: "WA Sender offers tools to extract contact information from major social platforms like LinkedIn, Facebook, Instagram, and TikTok. You can collect valuable data to build a comprehensive contact list for targeted marketing."
+  },
+  {
+    question: "What types of WhatsApp groups can I join using WA Sender?",
+    answer: "WA Sender helps you discover and join relevant WhatsApp groups based on your interests and business needs. This allows you to expand your network and increase your brand's visibility within engaged communities."
+  },
+  {
+    question: "How can I automate customer interactions with WA Sender?",
+    answer: "With WA Sender's auto-responder bots, you can set up automated replies to handle common customer queries and interactions. This ensures timely and consistent communication without manual intervention."
+  },
+  {
+    question: "Are there any limitations or restrictions with using WA Sender?",
+    answer: "To prevent misuse and ensure compliance with WhatsApp's terms of service, WA Sender has certain limitations on the number of messages you can send and the frequency of interactions. These restrictions help maintain a positive user experience and prevent spamming."
+  },
+  {
+    question: "What should I do if I encounter issues with WA Sender?",
+    answer: "If you experience any issues with WA Sender, visit our Support Center for troubleshooting guides and contact our customer support team for assistance. We're here to help you resolve any problems promptly."
+  },
+  {
+    question: "Can I try WA Sender before purchasing?",
+    answer: "Yes, we offer a free trial period for you to explore WA Sender's features and see how it fits your needs. Sign up on our website to start your trial and experience the benefits of our tool firsthand."
+  }
+];
 
 const FAQ = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextFAQ = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 6) % faqData.length);
+  };
+
+  const prevFAQ = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 6 + faqData.length) % faqData.length
+    );
+  };
+
   return (
     <div className="bg-[#E8FBF4] p-10">
       <h2 className="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div className="bg-white shadow-lg rounded-lg p-5">
-          <div className="flex items-center mb-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <i className="fas fa-paper-plane text-blue-600"></i>
+        {faqData.slice(currentIndex, currentIndex + 6).map((faq, index) => (
+          <div key={index} className="bg-white shadow-lg rounded-lg p-5">
+            <div className="flex items-center mb-4">
+              <div className="bg-blue-100 p-3 rounded-full">
+                <i className="fas fa-question-circle text-blue-600"></i>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 ml-4">{faq.question}</h3>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 ml-4">How many messages can we send?</h3>
+            <p className="text-gray-600">
+              {faq.answer}
+            </p>
           </div>
-          <p className="text-gray-600">
-            This tool is strictly not for spamming. It should be used as a customer engagement tool. There are restrictions to stop you from spamming with this tool.
-          </p>
-          <p className="text-gray-600 mt-2">
-            Spamming can get you banned from WhatsApp. See WhatsApp spamming rules <a href="https://example.com" className="text-blue-600">here</a>.
-          </p>
-        </div>
-        
-        <div className="bg-white shadow-lg rounded-lg p-5">
-          <div className="flex items-center mb-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <i className="fas fa-comments text-blue-600"></i>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 ml-4">Why should we use WhatsApp over other mediums?</h3>
-          </div>
-          <p className="text-gray-600">
-            WhatsApp has a very high engagement rate compared to other mediums. People consider WhatsApp to be a very personal medium of communication.
-          </p>
-        </div>
-        
-        <div className="bg-white shadow-lg rounded-lg p-5">
-          <div className="flex items-center mb-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <i className="fas fa-question-circle text-blue-600"></i>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 ml-4">Are we related to WhatsApp?</h3>
-          </div>
-          <p className="text-gray-600">
-            No. We are not part of WhatsApp Inc. This is an independent productivity Chrome extension that works on WhatsApp Web. Please follow WhatsApp policies and use this tool responsibly.
-          </p>
-        </div>
-        
-        <div className="bg-white shadow-lg rounded-lg p-5">
-          <div className="flex items-center mb-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <i className="fas fa-shield-alt text-blue-600"></i>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 ml-4">How secure is this tool?</h3>
-          </div>
-          <p className="text-gray-600">
-            Our tool uses end-to-end encryption to ensure that your messages and data are secure. We follow industry-standard security practices.
-          </p>
-        </div>
-        
-        <div className="bg-white shadow-lg rounded-lg p-5">
-          <div className="flex items-center mb-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <i className="fas fa-sync-alt text-blue-600"></i>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 ml-4">Can I schedule messages?</h3>
-          </div>
-          <p className="text-gray-600">
-            Yes, you can schedule messages to be sent at a later time. This feature allows you to plan your communication and marketing efforts in advance.
-          </p>
-        </div>
-        
-        <div className="bg-white shadow-lg rounded-lg p-5">
-          <div className="flex items-center mb-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <i className="fas fa-users text-blue-600"></i>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 ml-4">Can I send messages to groups?</h3>
-          </div>
-          <p className="text-gray-600">
-            Yes, our tool allows you to send messages to multiple WhatsApp groups, making it easy to manage group communications and reach a wider audience.
-          </p>
-        </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-8">
+        <button
+          onClick={prevFAQ}
+          className="bg-white p-3 rounded-full shadow-lg mx-2"
+        >
+          <FaArrowLeft className="text-blue-600" />
+        </button>
+        <button
+          onClick={nextFAQ}
+          className="bg-white p-3 rounded-full shadow-lg mx-2"
+        >
+          <FaArrowRight className="text-blue-600" />
+        </button>
       </div>
     </div>
   );
