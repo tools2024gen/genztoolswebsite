@@ -1,12 +1,10 @@
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Hero = () => {
-  const handleWhatsAppClick = () => {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    const url = isMobile
-      ? `https://wa.me/9136614978`
-      : `https://web.whatsapp.com/send?phone=9136614978`;
+  const handlePaymentClick = () => {
+    // Redirect to your Razorpay payment page
+    const url = "https://rzp.io/l/your-payment-page"; // Replace this with your Razorpay payment URL
     window.open(url, "_blank");
   };
 
@@ -23,9 +21,9 @@ const Hero = () => {
           <div className="flex justify-center md:justify-start mb-4">
             <button
               className="bg-gradient-to-r from-[#004F45] to-[#007249] text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex items-center"
-              onClick={handleWhatsAppClick}
+              onClick={handlePaymentClick}
             >
-              Connect on WhatsApp <FaWhatsapp className="ml-2" />
+              Buy Now <FaShoppingCart className="ml-2" />
             </button>
           </div>
           <p className="text-[#606060] lg:w-[400px] font-bold text-[16px] mx-auto md:mx-0">
