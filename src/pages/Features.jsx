@@ -31,7 +31,7 @@ const Features = () => {
           </div>
           <div className="lg:w-1/2 flex items-center justify-center">
             <img
-              src="/AICANLogo.png"
+              src="/1.webp"
               alt="AI Can"
               className="w-64 h-64 md:w-[400px] md:h-[400px] rounded-lg shadow-lg"
             />
@@ -61,7 +61,7 @@ const Features = () => {
           </div>
           <div className="lg:w-1/2 flex items-center justify-center">
             <img
-              src="/AICANLogo.png"
+              src="/2.webp"
               alt="AI Can"
               className="w-64 h-64 md:w-[400px] md:h-[400px] rounded-lg shadow-lg"
             />
@@ -92,7 +92,7 @@ const Features = () => {
           </div>
           <div className="lg:w-1/2 flex items-center justify-center">
             <img
-              src="/AICANLogo.png"
+              src="/3.webp"
               alt="AI Can"
               className="w-64 h-64 md:w-[400px] md:h-[400px] rounded-lg shadow-lg"
             />
@@ -126,7 +126,7 @@ const Features = () => {
           </div>
           <div className="lg:w-1/2 flex items-center justify-center">
             <img
-              src="/AICANLogo.png"
+              src="/4.webp"
               alt="AI Can"
               className="w-64 h-64 md:w-[400px] md:h-[400px] rounded-lg shadow-lg"
             />
