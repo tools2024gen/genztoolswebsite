@@ -73,7 +73,7 @@ const FAQ = () => {
           <div key={index} className="bg-white shadow-lg rounded-lg p-5">
             <div className="flex items-center mb-4">
               <div className="bg-blue-100 p-3 rounded-full">
-                <i className="fas fa-question-circle text-blue-600"></i>
+                <i className="fas fa-question-circle text-blue-600">WMT</i>
               </div>
               <h3 className="text-xl font-bold text-gray-900 ml-4">{faq.question}</h3>
             </div>

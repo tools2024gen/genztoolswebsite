@@ -1,15 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8 ">
+    <footer className="bg-gray-800 text-white py-8 px-4 lg:px-16">
       <div className="container mx-auto flex flex-col items-center lg:flex-row lg:justify-between">
         <div className="text-center mb-6 lg:text-left lg:mb-0">
           <h2 className="text-2xl font-bold">WhatsApp Marketing Tool</h2>
@@ -45,40 +39,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex space-x-4">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-500 transition"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-400 transition"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-pink-500 transition"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-700 transition"
-            >
-              <FaLinkedinIn />
-            </a>
-          </div>
+         
         </div>
       </div>
       <div className="text-center mt-8">

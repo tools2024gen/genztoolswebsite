@@ -186,21 +186,22 @@ const Testimonials = () => {
           </button>
         </div>
         <div className="absolute inset-y-0 left-0 hidden md:flex items-center">
-          <button
-            onClick={prevTestimonial}
-            className="bg-white p-3 rounded-full shadow-lg"
-          >
-            <FaArrowLeft className="text-blue-600" />
-          </button>
-        </div>
-        <div className="absolute inset-y-0 right-0 hidden md:flex items-center">
-          <button
-            onClick={nextTestimonial}
-            className="bg-white p-3 rounded-full shadow-lg"
-          >
-            <FaArrowRight className="text-blue-600" />
-          </button>
-        </div>
+  <button
+    onClick={prevTestimonial}
+    className="bg-white p-3 rounded-full shadow-lg ml-4"  // Added margin-left
+  >
+    <FaArrowLeft className="text-blue-600" />
+  </button>
+</div>
+<div className="absolute inset-y-0 right-0 hidden md:flex items-center">
+  <button
+    onClick={nextTestimonial}
+    className="bg-white p-3 rounded-full shadow-lg mr-4"  // Added margin-right
+  >
+    <FaArrowRight className="text-blue-600" />
+  </button>
+</div>
+
       </div>
     </div>
   );
