@@ -35,10 +35,10 @@ const Home = () => {
           </div>
           <div className="flex justify-center mt-6">
             <Link
-              href="/tutorials"
+              to="/tutorials"
               className="bg-gradient-to-r from-[#004F45] to-[#007249] text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
-              Watch complete Playlist{" "}
+              Watch complete Playlist
             </Link>
           </div>
         </div>

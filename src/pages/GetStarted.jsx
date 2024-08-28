@@ -1,12 +1,6 @@
 import React from "react";
 
 const GetStarted = () => {
-  const handlePaymentClick = () => {
-    // Redirect to your payment page (Razorpay or PayPal)
-    const url = "https://www.paypal.com/checkoutnow"; // Replace this with your payment URL, e.g., Razorpay or PayPal
-    window.open(url, "_blank");
-  };
-
   return (
     <section
       className="text-white text-center py-20 bg-cover bg-center"
@@ -18,12 +12,21 @@ const GetStarted = () => {
       <p className="text-xl mt-4">
         Effortlessly reach thousands of customers with just a few clicks. Simple, efficient, and highly effective.
       </p>
-      <button
-        onClick={handlePaymentClick}
-        className="mt-8 inline-block bg-white text-blue-500 px-6 py-3 rounded-full font-semibold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-      >
-        Buy Now
-      </button>
+
+      {/* Centered Button */}
+      <div className="flex justify-center items-center mt-8 mb-4">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="26TUJQQDM93YA" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <button
+            type="submit"
+            className="text-[30px] bg-white text-green-900 font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex items-center"
+          >
+            Buy Now at $49 only
+          </button>
+        </form>
+      </div>
     </section>
   );
 };

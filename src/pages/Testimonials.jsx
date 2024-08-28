@@ -186,22 +186,38 @@ const Testimonials = () => {
           </button>
         </div>
         <div className="absolute inset-y-0 left-0 hidden md:flex items-center">
-  <button
-    onClick={prevTestimonial}
-    className="bg-white p-3 rounded-full shadow-lg ml-4"  // Added margin-left
-  >
-    <FaArrowLeft className="text-blue-600" />
-  </button>
-</div>
-<div className="absolute inset-y-0 right-0 hidden md:flex items-center">
-  <button
-    onClick={nextTestimonial}
-    className="bg-white p-3 rounded-full shadow-lg mr-4"  // Added margin-right
-  >
-    <FaArrowRight className="text-blue-600" />
-  </button>
-</div>
-
+          <button
+            onClick={prevTestimonial}
+            className="bg-white p-3 rounded-full shadow-lg ml-4" // Added margin-left
+          >
+            <FaArrowLeft className="text-blue-600" />
+          </button>
+        </div>
+        <div className="absolute inset-y-0 right-0 hidden md:flex items-center">
+          <button
+            onClick={nextTestimonial}
+            className="bg-white p-3 rounded-full shadow-lg mr-4" // Added margin-right
+          >
+            <FaArrowRight className="text-blue-600" />
+          </button>
+        </div>
+      </div>
+      <div className="flex justify-center items-center mt-8 mb-4">
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_top"
+        >
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="26TUJQQDM93YA" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <button
+            type="submit"
+            className="bg-gradient-to-r text-[30px] from-[#004F45] to-[#007249] text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex items-center"
+          >
+            Buy Now at $49 only
+          </button>
+        </form>
       </div>
     </div>
   );

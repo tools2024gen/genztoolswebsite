@@ -3,143 +3,194 @@ import React from "react";
 const Tiles = () => {
   return (
     <div className="bg-[#E8FBF4] p-10">
-      <h2 className="text-3xl font-bold text-center mb-10">
-        Check out our other pages
-      </h2>
+      <h2 className="text-3xl font-bold text-center mb-10">Features</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              Sender
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              Check out our WA Sender site.
+              Unlimited WhatsApp Messages to Contact / Numbers
             </h3>
             <p className="text-gray-600 mt-2">
-              Explore the powerful features of WA Sender, our extension designed
-              to enhance your WhatsApp messaging capabilities for business use.
+              Send messages to all contacts including contacts not saved in your
+              address book.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">Check WA Sender</button> */}
           </div>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              WhatsApp Web
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              WhatsApp Web Tool
+              Send Message to Groups
             </h3>
             <p className="text-gray-600 mt-2">
-              Learn how to leverage WhatsApp Web in conjunction with our tool
-              for efficient message sending and management.
+              Send unlimited messages to all your joined groups.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">WhatsApp Web</button> */}
           </div>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              WA Business
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              Use with WA Business
+              Message Delay Management
             </h3>
             <p className="text-gray-600 mt-2">
-              Discover how our tool integrates seamlessly with WhatsApp Business
-              to supercharge your business communication.
+              Strong Delay Management to protect your WhatsApp account from
+              being banned.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">WhatsApp Business</button> */}
           </div>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              Campaign
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              Schedule Campaigns
+              Grab Group Links from Web
             </h3>
             <p className="text-gray-600 mt-2">
-              {" "}
-              Optimise your WhatsApp marketing efforts by planning and
-              scheduling campaigns for maximum impact and engagement.
+              Grab all group links from any web page.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">Schedule Now</button> */}
           </div>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              Data
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              Scrape Google Map Data
+              Get All Member Numbers from Any Group
             </h3>
             <p className="text-gray-600 mt-2">
-              Harness the power of data by efficiently collecting valuable
-              business information from Google Maps to inform your marketing
-              strategies.
+              Grab group members from any group.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">Scrape Now</button> */}
           </div>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              Emails
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              Scrape Emails and Contacts
+              Modern Material Design
             </h3>
             <p className="text-gray-600 mt-2">
-              Expand your reach by extracting contact information from major
-              social media platforms like LinkedIn, Facebook, Instagram, and
-              TikTok.
+              Latest Material UI design with an easy-to-use interface.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">Scrape Now</button> */}
           </div>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              Groups
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              Find WhatsApp Groups
+              Standard Coding Structure
             </h3>
             <p className="text-gray-600 mt-2">
-              {" "}
-              Grow your network by finding and joining relevant WhatsApp groups
-              to broaden your audience and increase your visibility.
+              Customize this tool and add your features with simple coding
+              skills.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">Find Now</button> */}
           </div>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-5 text-center">
-          {/* <img src="/aican.png" alt="Logo" className="w-full h-32 object-cover rounded-t-lg" /> */}
           <div className="p-5">
-            <span className="text-sm text-green-600 font-bold uppercase">
-              Bots
-            </span>
             <h3 className="text-xl font-bold text-gray-900 mt-2">
-              Use Auto Responder Bots
+              Bulk Import
             </h3>
             <p className="text-gray-600 mt-2">
-              Streamline your customer service with easy-to-setup auto-responder
-              bots, ensuring prompt and consistent communication.
+              Import your contact numbers from an Excel sheet.
             </p>
-            {/* <button className="bg-blue-600 text-white py-2 px-4 rounded-full mt-4">Set Up Now</button> */}
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">
+              Google Map Data Extractor / Scrapper
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Extract data from Google Maps with targeted locations and import
+              extracted numbers into WA Sender for bulk messaging.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">Report</h3>
+            <p className="text-gray-600 mt-2">
+              Get detailed reports after the campaign is complete.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">
+              Documentation
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Detailed documents with images (with markups) and video.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">
+              Developer Documentation
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Detailed documents with images (with markups) and video to change
+              software name, logo, and more.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">
+              Runnable Files
+            </h3>
+            <p className="text-gray-600 mt-2">We provide runnable files.</p>
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">
+              Source Code
+            </h3>
+            <p className="text-gray-600 mt-2">
+              We provide the code of this software to rebrand it with your name,
+              logo, and color scheme.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">
+              Lifetime Updates
+            </h3>
+            <p className="text-gray-600 mt-2">
+              We continually enhance our product and plan to introduce new
+              features in the future. Stay with us!
+            </p>
+          </div>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-5 text-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold text-gray-900 mt-2">
+              Dynamic Parameterized Message Sender
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Send dynamic messages like "Hi{" "}
+              <span className="text-blue-500">Name</span> , Your invoice no{" "}
+              <span className="text-blue-500">InvoiceNo</span> is generated.
+              Click below link to download{" "}
+              <span className="text-blue-500">InvoiceLink</span>".{" "}
+            </p>
           </div>
         </div>
       </div>
+      <div className="flex justify-center items-center mt-8 mb-4">
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_top"
+        >
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="26TUJQQDM93YA" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <button
+            type="submit"
+            className="bg-gradient-to-r text-[30px] from-[#004F45] to-[#007249] text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex items-center"
+          >
+            Buy Now at $49 only
+          </button>
+        </form>
+      </div>
+      
     </div>
   );
 };
